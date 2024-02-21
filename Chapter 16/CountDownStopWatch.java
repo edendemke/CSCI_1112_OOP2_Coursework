@@ -62,8 +62,7 @@ public class CountDownStopWatch extends Application {
 		timeline.setCycleCount(Timeline.INDEFINITE);
 		countdownText.setFont(Font.font("Times New Roman", 80));
 		pane.setCenter(countdownText);
-		mediaPlayer.setCycleCount(Duration.INDEFINITE);
-		pane.setTop(mediaPlayer);
+		mediaPlayer.setCycleCount(MediaPlayer.INDEFINITE);
 		
 		textField.setOnAction(e -> {
 			countdownText.setText(textField.getText());
